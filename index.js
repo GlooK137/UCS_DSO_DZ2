@@ -32,7 +32,7 @@ app.post("/", (req,res) => {
         }
     }
     let answer = {
-        c: c;
+        c: c
     }
     res.send(answer);
 })
