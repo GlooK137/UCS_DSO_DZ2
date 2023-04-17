@@ -13,8 +13,8 @@ jobs:
         uses: actions/setup-node@v2.5.2
         with:
           node-version: '14.16.0'
-      - run: npm i express
-      - run: node index.js
+      - run: npm i express eslint
+      - run: eslint index.js
       
       - name: Check ls
         run: ls
