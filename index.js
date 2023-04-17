@@ -10,8 +10,6 @@ app.post("/", (req,res) => {
     let a = data.a;
     let b = data.b;
     let op = data.op;
-    console.log(data);
-    console.log(op);
     let c = 0;
     switch(op){
         case "+":{
@@ -33,10 +31,9 @@ app.post("/", (req,res) => {
     }
     let answer = {
         c: c
-    }
+    };
     res.send(answer);
-})
+});
 
 app.listen(port, () => {
-    console.log(`Server started on port: ${port}`);
-})
+});
